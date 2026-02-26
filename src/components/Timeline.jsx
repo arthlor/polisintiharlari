@@ -19,6 +19,11 @@ function TimelineItem({ item, index }) {
                 <p style={{ color: "var(--text-secondary)", fontSize: "0.95rem" }}>
                     {item.desc}
                 </p>
+                <div className="claim-meta">
+                    <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">Kaynak</a>
+                    <span>{item.sourceType}</span>
+                    <span>{item.asOfDate}</span>
+                </div>
             </div>
         </div>
     );

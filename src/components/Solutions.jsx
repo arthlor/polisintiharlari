@@ -21,7 +21,7 @@ export default function Solutions() {
         <section id="cozum" className="dossier-panel outline">
             <div className="container">
                 <div className="section-header">
-                    <h2>05. Çözüm Manifestosu</h2>
+                    <h2>07. Çözüm Manifestosu</h2>
                     <span className="badge green">REFORM_ŞART</span>
                 </div>
                 <div className="grid-2">

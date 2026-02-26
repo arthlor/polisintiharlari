@@ -15,6 +15,11 @@ function EvidenceCard({ evi }) {
                 className="evidence-note"
                 dangerouslySetInnerHTML={{ __html: evi.note }}
             />
+            <div className="claim-meta">
+                <a href={evi.sourceUrl} target="_blank" rel="noopener noreferrer">Kaynak</a>
+                <span>{evi.sourceType}</span>
+                <span>{evi.asOfDate}</span>
+            </div>
         </div>
     );
 }

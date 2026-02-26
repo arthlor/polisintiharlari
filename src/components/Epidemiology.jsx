@@ -56,8 +56,15 @@ export default function Epidemiology() {
                         <ul className="stats-list">
                             {SITE_DATA.stats.map((stat, i) => (
                                 <li key={i}>
-                                    <span>{stat.label}</span>
-                                    <strong>{stat.value}</strong>
+                                    <div className="stats-main">
+                                        <span>{stat.label}</span>
+                                        <strong>{stat.value}</strong>
+                                    </div>
+                                    <div className="claim-meta">
+                                        <a href={stat.sourceUrl} target="_blank" rel="noopener noreferrer">Kaynak</a>
+                                        <span>{stat.sourceType}</span>
+                                        <span>{stat.asOfDate}</span>
+                                    </div>
                                 </li>
                             ))}
                         </ul>
