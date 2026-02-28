@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { SITE_DATA } from '../data';
-import heroBg from '../assets/hero-bg.png';
+import heroBg from '../assets/hero-bg.webp';
 import logo from '../assets/logo.png';
 import { useScrambleText } from '../hooks/useScrambleText';
 
@@ -44,30 +44,18 @@ export default function Hero() {
             <div className="container" style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', paddingBottom: '4rem' }}>
                 <img src={logo} alt="CHP Logo" style={{ width: '180px', marginBottom: '2rem' }} />
 
-                <h1 style={{ fontSize: '3.5rem', lineHeight: 1.1, color: 'var(--text-primary)', marginBottom: '1rem', fontWeight: 700, minHeight: '3.8rem' }}>
+                <h1 className="hero-title">
                     {scrambledTitle}
                 </h1>
 
-                <p className="subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', letterSpacing: '1px', maxWidth: '800px', lineHeight: '1.6', minHeight: '3.8rem' }}>
+                <p className="subtitle hero-subtitle">
                     {scrambledSubtitle}
                 </p>
 
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexWrap: 'wrap',
-                    gap: '0.75rem',
-                    marginBottom: '3rem',
-                    padding: '0.75rem 1.5rem',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid rgba(255, 255, 255, 0.1)',
-                    borderRadius: '50px',
-                    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)'
-                }}>
-                    <span style={{ fontWeight: '700', color: 'var(--text-primary)', letterSpacing: '1px' }}>Murat BAKAN</span>
-                    <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: 'var(--accent-red)' }}></span>
-                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>İçişleri Politika Kurulu Başkanı <span style={{ color: 'var(--border-light)' }}>|</span> İzmir Milletvekili <span style={{ color: 'var(--border-light)' }}>|</span> PM Üyesi</span>
+                <div className="hero-author">
+                    <span className="author-name">Murat BAKAN</span>
+                    <span className="author-dot"></span>
+                    <span className="author-title">İçişleri Politika Kurulu Başkanı <span className="author-sep">|</span> İzmir Milletvekili <span className="author-sep">|</span> PM Üyesi</span>
                 </div>
 
                 <div className="counter-container">

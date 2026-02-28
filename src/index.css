@@ -170,9 +170,10 @@ h2 {
 
 .hero-section .subtitle {
   font-family: var(--font-mono);
-  color: var(--accent-red);
+  color: #ffcccc;
   margin-bottom: 2rem;
   font-size: 1.1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .counter-container {
@@ -1055,4 +1056,182 @@ footer p {
 
 .tweet-wrapper:hover .tweet-index {
   border-color: var(--accent-red);
+}
+
+/* === Hero Refactored Classes === */
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  min-height: 3.8rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  max-width: 800px;
+  line-height: 1.6;
+  min-height: 3.8rem;
+}
+
+.hero-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.author-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+
+.author-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent-red);
+}
+
+.author-title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.author-sep {
+  color: var(--border-light);
+}
+
+/* === Comprehensive Mobile Overrides === */
+@media (max-width: 768px) {
+
+  /* Globals */
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Hero overrides */
+  .hero-title {
+    font-size: 2.2rem;
+    min-height: auto;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    min-height: auto;
+  }
+
+  .hero-author {
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .author-dot {
+    display: none;
+  }
+
+  .author-title {
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .counter {
+    font-size: 2rem;
+  }
+
+  .counter-container {
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* CTAs */
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    gap: 1rem !important;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  /* Sections */
+  .dossier-panel {
+    padding: 3rem 0;
+  }
+
+  .dossier-panel.outline {
+    margin: 1rem;
+    padding: 2rem 0;
+  }
+
+  .card-mechanism {
+    padding: 1.5rem;
+  }
+
+  /* Grids */
+  .grid-2,
+  .grid-3,
+  .stat-grid-3,
+  .evidence-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 2.5rem;
+  }
+
+  .timeline-item::before {
+    left: -1.7rem;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  /* Epidemiology & Stats */
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  .custom-chart-box {
+    padding: 0.5rem;
+  }
 }
