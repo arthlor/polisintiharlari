@@ -64,7 +64,7 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-ctas" style={{ marginTop: '2.5rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-                    <button className="cta-button primary-cta" onClick={() => {
+                    <button aria-label="Bu Raporu Paylaş" className="cta-button primary-cta" onClick={() => {
                         if (navigator.share) {
                             navigator.share({
                                 title: 'Polis İntiharları Raporu',
@@ -78,7 +78,7 @@ export default function Hero() {
                     }}>
                         Bu Raporu Paylaş.
                     </button>
-                    <a href="#report-case" className="cta-button secondary-cta" onClick={(e) => {
+                    <a href="#report-case" aria-label="Güvenli Veri İlet" className="cta-button secondary-cta" onClick={(e) => {
                         e.preventDefault();
                         alert('Güvenli ihbar kanalı yakında aktif edilecektir (WIP).');
                     }}>
