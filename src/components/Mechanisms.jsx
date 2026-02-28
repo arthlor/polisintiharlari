@@ -7,10 +7,8 @@ export function MechanismCard({ mech }) {
 
     return (
         <div ref={domRef} className={`card-mechanism fade-up ${isVisible ? 'visible' : ''}`}>
-            <h3 style={{ color: "var(--accent-red)", fontFamily: "var(--font-mono)", fontSize: "1.1rem", marginBottom: "1rem" }}>
-                {mech.title}
-            </h3>
-            <p style={{ color: "var(--text-secondary)" }}>{mech.desc}</p>
+            <h3>{mech.title}</h3>
+            <p>{mech.desc}</p>
         </div>
     );
 }

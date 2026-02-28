@@ -3,16 +3,12 @@ import { Tweet } from 'react-tweet';
 import { SITE_DATA } from '../data';
 import { useFadeIn } from '../hooks/useFadeIn';
 
-function EmbeddedTweet({ id, index }) {
+function EmbeddedTweet({ id }) {
     const { isVisible, domRef } = useFadeIn();
 
     return (
-        <div ref={domRef} className={`tweet-wrapper fade-up ${isVisible ? 'visible' : ''}`}>
-            <div className="tweet-dossier-header">
-                <span className="tweet-id">BELGE_NO: {id.substring(id.length - 6)}</span>
-                <span className="tweet-index">EK_{String(index + 1).padStart(2, '0')}</span>
-            </div>
-            <div data-theme="dark" className="compact-tweet">
+        <div ref={domRef} className={`fade-up ${isVisible ? 'visible' : ''}`} style={{ display: 'flex', justifyContent: 'center' }}>
+            <div data-theme="dark" style={{ width: '100%' }}>
                 <Tweet id={id} />
             </div>
         </div>
@@ -30,9 +26,9 @@ export default function Tweets() {
                 <p className="description" style={{ color: "var(--text-secondary)", maxWidth: "800px", marginBottom: "2rem" }}>
                     TBMM kürsüsünde ve soru önergelerinde tıkanan siyaset, dijital diplomasi üzerinden kamuoyuna taşınıyor. CHP İzmir Milletvekili Murat Bakan'ın ilgili X (Twitter) paylaşımları:
                 </p>
-                <div className="tweets-masonry">
+                <div className="grid-2">
                     {SITE_DATA.tweets.map((id, index) => (
-                        <EmbeddedTweet key={index} id={id} index={index} />
+                        <EmbeddedTweet key={index} id={id} />
                     ))}
                 </div>
             </div>

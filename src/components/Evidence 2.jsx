@@ -1,27 +1,20 @@
 import React from 'react';
 import { SITE_DATA } from '../data';
 import { useFadeIn } from '../hooks/useFadeIn';
-import TypewriterNote from './TypewriterNote';
 
 function EvidenceCard({ evi }) {
     const { isVisible, domRef } = useFadeIn();
 
-    // Generate a consistent pseudo-random rotation per card between -2 and 2 degrees
-    const rotation = React.useMemo(() => (Math.random() * 4) - 2, []);
-
     return (
-        <div ref={domRef} className={`evidence-card fade-up ${isVisible ? 'visible' : ''}`} style={{ transform: `rotate(${rotation}deg)` }}>
-            <div className="pin"></div>
+        <div ref={domRef} className={`evidence-card fade-up ${isVisible ? 'visible' : ''}`}>
             <div className="evidence-name">{evi.name}</div>
             <div className="mono-small" style={{ color: "var(--text-dim)", marginBottom: "1rem" }}>
                 {evi.age}
             </div>
-            <TypewriterNote htmlContent={evi.note} />
-            <div className="claim-meta">
-                <a href={evi.sourceUrl} target="_blank" rel="noopener noreferrer">Kaynak</a>
-                <span>{evi.sourceType}</span>
-                <span>{evi.asOfDate}</span>
-            </div>
+            <div
+                className="evidence-note"
+                dangerouslySetInnerHTML={{ __html: evi.note }}
+            />
         </div>
     );
 }
@@ -35,7 +28,7 @@ export default function Evidence() {
                     <span className="badge red">TBMM_TUTANAKLARI</span>
                 </div>
                 <p className="description" style={{ color: "var(--text-secondary)", maxWidth: "800px", marginBottom: "2rem" }}>
-                    Bu bölümdeki vakalar, TBMM Genel Kurul ve Komisyon tutanaklarında milletvekilleri tarafından adı anılarak aktarılan örneklerden derlenmiştir.
+                    İntihar eden polislerin geride bıraktığı notlar, devleti yönetenlerin kurduğu acımasız sistemin birer iddianamesidir.
                 </p>
                 <div className="evidence-grid">
                     {SITE_DATA.evidence.map((evi, index) => (
