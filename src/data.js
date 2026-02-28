@@ -7,58 +7,58 @@ export const SITE_DATA = {
         {
             label: "Polis Mensubu İntihar Oranı",
             value: "%17",
-            sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/33/Ham/31105694-c1c9-4af3-819f-807067291b4e.html",
-            sourceType: "TBMM Tutanak",
-            asOfDate: "2026-02-25"
+            sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/6/4/1351f226-3693-4911-9b67-d391c0d65905.html",
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         },
         {
             label: "Türkiye Genel İntihar Oranı",
             value: "%4.1",
-            sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/33/Ham/31105694-c1c9-4af3-819f-807067291b4e.html",
-            sourceType: "TBMM Tutanak",
-            asOfDate: "2026-02-25"
+            sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/6/4/1351f226-3693-4911-9b67-d391c0d65905.html",
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         },
         {
             label: "Uluslararası Kıyas (İngiltere)",
             value: "1.5x Katı",
             sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/33/Ham/31105694-c1c9-4af3-819f-807067291b4e.html",
-            sourceType: "TBMM Tutanak",
-            asOfDate: "2026-02-25"
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         },
         {
             label: "Uluslararası Kıyas (Fransa)",
             value: "1.8x Katı",
             sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/33/Ham/31105694-c1c9-4af3-819f-807067291b4e.html",
-            sourceType: "TBMM Tutanak",
-            asOfDate: "2026-02-25"
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         },
         {
             label: "Türkiye Kıyas (Genel Ortalamaya)",
             value: "4-5x Katı",
             sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak/28/4/33/Ham/31105694-c1c9-4af3-819f-807067291b4e.html",
-            sourceType: "TBMM Tutanak",
-            asOfDate: "2026-02-25"
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         },
         {
             label: "2021 Yılı İntihar Sayısı",
             value: "108",
-            sourceUrl: "https://ankahaber.net/haber/detay/tbmmde_iyi_partinin_polis_intiharlariyla_ilgili_arastirma_onergesi_reddedildi_murat_bakan_bir_icisleri_bakani_2_gun_icerisinde_5_polis_intihar_edecek_sesini_cikartmayacak_alisanla_gulumse_programina_gidecek_polis_gulumsemiyor_106089",
-            sourceType: "Haber Ajansı",
-            asOfDate: "2026-02-25"
+            sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/6/4/1351f226-3693-4911-9b67-d391c0d65905.html",
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         },
         {
-            label: "Akut Kriz 1 (6 Ayda)",
-            value: "34",
-            sourceUrl: "https://ankahaber.net/haber/detay/tbmmde_iyi_partinin_polis_intiharlariyla_ilgili_arastirma_onergesi_reddedildi_murat_bakan_bir_icisleri_bakani_2_gun_icerisinde_5_polis_intihar_edecek_sesini_cikartmayacak_alisanla_gulumse_programina_gidecek_polis_gulumsemiyor_106089",
-            sourceType: "Haber Ajansı",
-            asOfDate: "2026-02-25"
+            label: "Son 2 Yılda İntihar (2021-2022)",
+            value: "139",
+            sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/6/4/1351f226-3693-4911-9b67-d391c0d65905.html",
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         },
         {
-            label: "Akut Kriz 2 (2 Günde)",
-            value: "5",
-            sourceUrl: "https://ankahaber.net/haber/detay/tbmmde_iyi_partinin_polis_intiharlariyla_ilgili_arastirma_onergesi_reddedildi_murat_bakan_bir_icisleri_bakani_2_gun_icerisinde_5_polis_intihar_edecek_sesini_cikartmayacak_alisanla_gulumse_programina_gidecek_polis_gulumsemiyor_106089",
-            sourceType: "Haber Ajansı",
-            asOfDate: "2026-02-25"
+            label: "Son 2 Günde Kayıp/Girişim",
+            value: "4+1",
+            sourceUrl: "https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/27/6/4/1351f226-3693-4911-9b67-d391c0d65905.html",
+            sourceType: "TBMM Tutanak (Konuşma Beyanı)",
+            asOfDate: "2026-02-28"
         }
     ],
     mechanisms: [
